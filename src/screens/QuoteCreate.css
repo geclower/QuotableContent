@@ -1,22 +1,51 @@
 .new-quote{
     display: flex; 
     flex-direction: column;
-    justify-content:space-evenly
+    justify-content: space-evenly;
+    flex-grow: 1;
 }
 
 form{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    align-items: center
+    align-items: center;
+    margin: 10px
 }
 
 input{
     margin: 30px;
-    width: 50%
-    
+    width: 75%;
+    height: 30px;
+    font-size: 15px;
+}
+
+textarea{
+    margin: 30px;
+    font-size: 15px
 }
 
 .submit{
-    width: 150px
+    width: 150px;
+    font-size: 18px;
+}
+
+.title{
+    font-size: 75px;
+    letter-spacing: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.title2{
+    font-size: 50px;
+    margin-top: 30px;
+}
+
+.form-collection{
+    border: 2px black solid;
+    border-radius: 10px;
+    width: 50%;
+    align-self: center;
+    background-color: rgba(238, 238, 238, .5);
 }

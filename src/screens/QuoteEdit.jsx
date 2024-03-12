@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { getQuote, editQuote } from "../services/quotes.js";
+import "./QuoteCreate.css"
 
 function QuoteEdit() {
   const [quote, setQuote] = useState({
@@ -34,16 +35,6 @@ function QuoteEdit() {
     navigate("/quotes");
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   setQuote((prevQuote) => ({
-  //     ...prevQuote,
-  //     length: e.target[2].value.length,
-  //   }));
-  //   await createQuote(quote);
-  //   navigate("/quotes");
-  // };
-
   const handleChange = (e) => {
     const { name, value } = e.target;
     setQuote((prevQuote) => ({
@@ -53,9 +44,10 @@ function QuoteEdit() {
   };
 
   return (
-    <div>
-      <h1>Quotable Content</h1>
-      <h2>Edit this Quote</h2>
+    <div className="new-quote">
+      <h1 className="title">Quotable Content</h1>
+      <div className="form-collection">
+      <h2 className="title2">Edit this Quote</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -71,16 +63,18 @@ function QuoteEdit() {
           value={quote.authorImage}
           onChange={handleChange}
         />
-        <input
-          type="text"
+       <textarea
+          rows="4"
+          cols="50"
           placeholder="Quote"
           name="content"
           value={quote.content}
           onChange={handleChange}
         />
 
-        <button type="submit">Edit Quote</button>
+        <button className="submit" type="submit">Edit Quote</button>
       </form>
+      </div>
     </div>
   );
   }

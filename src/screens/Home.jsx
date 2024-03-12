@@ -29,7 +29,7 @@ function Home() {
       <div className='daily-quote'>
       <h2>Quote of the day!</h2>
       <p className='quote'>{quotes[num]?.content}</p>
-      <p className='author'>{quotes[num]?.author}</p>
+      <p className='author'>- {quotes[num]?.author}</p>
       </div>
     </div>
   )

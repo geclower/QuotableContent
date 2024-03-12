@@ -1,6 +1,9 @@
 nav{
     display: flex;
     justify-content: space-evenly;
-    font-size: 25px;
-    margin: 20px
+    font-size: 30px;
+    margin: 20px;
+    background-color: grey;
+    padding: 20px;
+    margin: 0;
 }

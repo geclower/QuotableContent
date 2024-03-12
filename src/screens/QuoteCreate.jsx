@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createQuote } from "../services/quotes.js";
-import "./QuoteCreate.css"
+import "./QuoteCreate.css";
 
 function QuoteCreate() {
   const [quote, setQuote] = useState({
@@ -33,8 +33,9 @@ function QuoteCreate() {
 
   return (
     <div className="new-quote">
-      <h1>Quotable Content</h1>
-      <h2>Add a new quote here</h2>
+      <h1 className="title">Quotable Content</h1>
+      <div className="form-collection">
+      <h2 className="title2">Add a New Quote</h2>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -50,18 +51,22 @@ function QuoteCreate() {
           value={quote.authorImage}
           onChange={handleChange}
         />
-        <input
-          type="text"
+        <textarea
+          rows="4"
+          cols="50"
           placeholder="Quote"
           name="content"
           value={quote.content}
           onChange={handleChange}
         />
-     
-        <button className="submit" type="submit">Add Quote</button>
+
+        <button className="submit" type="submit">
+          Add Quote
+        </button>
       </form>
+      </div>
     </div>
   );
-  }
+}
 
 export default QuoteCreate;

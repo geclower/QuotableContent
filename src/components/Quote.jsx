@@ -13,7 +13,7 @@ function Quote({ quote }) {
     <div className="one-quote">
       <img className="author-image" src={quote.authorImage} alt={quote.author}/>
       <p>{quote.content}</p>
-      <p>{quote.author}</p>
+      <p>- {quote.author}</p>
       <div className="buttons">
         <Link to={`/${quote._id}/edit`}>
           <button>EDIT</button>
