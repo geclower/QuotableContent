@@ -1,0 +1,22 @@
+.new-quote{
+    display: flex; 
+    flex-direction: column;
+    justify-content:space-evenly
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    align-items: center
+}
+
+input{
+    margin: 30px;
+    width: 50%
+    
+}
+
+.submit{
+    width: 150px
+}

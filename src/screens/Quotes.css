@@ -1,0 +1,19 @@
+.quotes-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+
+.one-quote{
+    border: 2px black solid;
+    width: 30%;
+    margin: 10px;
+    padding: 10px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: space-evenly;
+
+}
