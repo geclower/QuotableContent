@@ -7,9 +7,10 @@
 }
 
 h1{
-   font-size: 200px;
+   font-size: 150px;
    font-family: "Just Another Hand";
-   margin: 75px
+   margin: 75px;
+   letter-spacing: 5px;
 }
 
 .daily-quote{
